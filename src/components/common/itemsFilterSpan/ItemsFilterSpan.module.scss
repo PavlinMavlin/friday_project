@@ -1,0 +1,12 @@
+@import "./src/assets/styles/variebles.scss";
+@import "./src/assets/styles/mixins.scss";
+
+.buttonBlock {
+  @include button(100px, 50px, 16px, transparent, none)
+}
+
+.spanTitle {
+  @extend %ff600;
+  font-size: 13px;
+  white-space: nowrap;
+}

@@ -1,0 +1,72 @@
+@import "./src/assets/styles/variebles.scss";
+@import "./src/assets/styles/mixins.scss";
+
+.profileAvatar {
+  max-width: 200px;
+  width: 100%;
+
+  background-color: transparent;
+  text-align: center;
+}
+
+.avatarWrap {
+  margin: 0 auto;
+
+  width: 96px;
+  height: 96px;
+
+  position: relative;
+}
+
+.avatar {
+  width: 100%;
+
+  border-radius: 50%;
+}
+
+
+.name {
+  @extend %ff600;
+  font-size: 18px;
+  color: $textColor;
+}
+
+.career {
+  @extend %sf400;
+  font-size: 14px;
+  opacity: .5;
+  color: $textColor;
+}
+
+.profileAvatarButtonContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  height: 50px;
+}
+
+.profileAvatarButton {
+  @extend %btn;
+  padding: 5px;
+
+  width: 100px;
+  min-height: 25px;
+
+  font-size: 14px;
+  color: #21268F;
+  background-color: transparent;
+  border: 1px solid #635D80;
+  border-radius: 3px;
+  box-shadow: none;
+
+  &:hover {
+    background-color: transparent;
+    box-shadow: 0 0 5px;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}

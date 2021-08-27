@@ -1,0 +1,73 @@
+@import "../../../../assets/styles/variebles";
+@import "../../../../assets/styles/mixins";
+
+.cardInfo {
+  @extend %loginBlock;
+  padding-top: 35px;
+
+  min-height: 445px;
+
+  position: relative;
+  z-index: 99;
+
+  background-color: $bgWhite;
+}
+
+.caption {
+  @extend %loginCaption;
+  margin-bottom: 25px;
+}
+
+.inputBox {
+  margin-bottom: 80px;
+}
+
+.inputWrap {
+  margin-bottom: 20px;
+}
+
+input[type="file"] {
+  display: none;
+}
+
+.file {
+  text-align: left;
+  transform: translateX(-90px);
+}
+
+.label {
+  display: block;
+  margin-top: 15px;
+
+  font-size: 13px;
+  line-height: 1.1;
+  text-align: left;
+  color: #21268F;
+  cursor: pointer;
+}
+
+.btns {
+  @include flex();
+
+  padding-bottom: 25px;
+
+  @include media(xs) {
+    flex-direction: column-reverse;
+  }
+}
+
+.button {
+  max-width: 125px;
+
+  @include media(xs) {
+    max-width: 125px;
+    margin-bottom: 30px;
+  }
+}
+
+.button:first-child {
+  @extend %btnCancel;
+}
+
+
+

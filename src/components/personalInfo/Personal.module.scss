@@ -1,0 +1,49 @@
+@import "../../assets/styles/variebles";
+@import "../../assets/styles/mixins";
+
+.personalInfo {
+  @extend %loginBlock;
+  padding-top: 35px;
+
+  min-height: 445px;
+}
+
+.caption {
+  @extend %loginCaption;
+  margin-bottom: 25px;
+}
+
+.inputBox {
+  margin: 30px 0 100px;
+}
+
+.inputWrap {
+  margin-bottom: 30px;
+}
+
+.btns {
+  @include flex();
+
+  padding-bottom: 25px;
+
+  @include media(xs) {
+    flex-direction: column-reverse;
+  }
+}
+
+.button {
+  max-width: 125px;
+
+  @include media(xs) {
+    max-width: 125px;
+
+    margin-bottom: 30px;
+  }
+}
+
+.button:first-child {
+  @extend %btnCancel;
+}
+
+
+

@@ -1,0 +1,73 @@
+@import "./src/assets/styles/variebles.scss";
+@import "./src/assets/styles/mixins.scss";
+
+.login {
+  @extend %loginBlock;
+}
+
+.caption {
+  margin-top: 35px;
+  @extend %loginCaption;
+}
+
+.inputBox {
+  margin-bottom: 5px;
+}
+
+.inputWrap {
+  margin-bottom: 15px;
+}
+
+.infoWrap {
+  @include flex();
+
+  margin-bottom: 80px;
+
+  @include media(xs) {
+    flex-direction: column;
+    align-items: flex-start;
+
+    margin-bottom: 55px;
+  }
+}
+
+.forgotLink {
+  font-size: 14px;
+  line-height: 1.2;
+  color: $accent;
+
+  @include media(xs) {
+    margin-top: 25px;
+  }
+
+  &:hover {
+    text-decoration: underline;
+    color: lighten($accent, 10%);
+  }
+
+  &:active {
+    color: darken($accent, 10%);
+  }
+}
+
+.button {
+  margin-bottom: 30px;
+
+  max-width: 255px;
+}
+
+.account {
+  display: block;
+
+  margin-bottom: 10px;
+
+  @extend %sf600;
+  font-size: 14px;
+  line-height: 1.6;
+  opacity: .5;
+}
+
+.singUp {
+  @extend %linkTry;
+}
+

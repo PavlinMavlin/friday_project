@@ -1,0 +1,63 @@
+@import "./src/assets/styles/variebles.scss";
+@import "./src/assets/styles/mixins.scss";
+
+.modalAdd {
+  @extend %modal;
+}
+
+.modalTop {
+  @include flex();
+  padding: 0 25px 15px;
+
+  border-bottom: 1px solid #EDF0F6;
+}
+
+.caption {
+  margin: 0;
+
+  @extend %loginCaption;
+  font-size: 18px;
+}
+
+.btnCross {
+  @extend %cross;
+  background-image: url(./../../../../assets/images/cross.svg);
+}
+
+.inputWrap {
+  margin: 30px 20px 30px 25px;
+}
+
+.text {
+  @extend %sf400;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.btns {
+  @include flex();
+
+  margin: 0 25px;
+
+  @include media(xs) {
+    flex-direction: column-reverse;
+    padding-bottom: 0;
+  }
+}
+
+.button {
+  max-width: 125px;
+
+  @include media(xs) {
+    max-width: 125px;
+
+    margin-bottom: 30px;
+  }
+}
+
+.button:first-child {
+  @extend %btnCancel;
+}
+
+
+

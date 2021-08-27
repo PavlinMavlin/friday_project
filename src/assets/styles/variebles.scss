@@ -1,0 +1,247 @@
+$whiteTextColor: #F8F9FE;
+$blackTextColor: #111111;
+$greyTextColor: #4f4f4f;
+$primaryColor: #0075FF;
+$secondColor: #005CC8;
+$redErrorColor: #E75C5C;
+$brightRedErrorColor: #D92121;
+$fontFamilyStyle: 'Mukta', sans-serif;
+
+//nata
+
+$textColor: #2D2E46;
+$textLight: #ECECF9;
+$accent: #21268F;
+
+$bgWhite: #F9F9FE;
+$bgGrayBlue: #D7D8EF;
+$bgMenu: #EBE0E9;
+$bgDelete: #F1453D;
+
+$br: 8px;
+$brBtn: 30px;
+
+
+//template variables
+
+
+%container {
+  max-width: 1030px;
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+
+  @media (max-width: 574.8px) {
+    padding: 0 5px;
+  }
+}
+
+
+//FONTS
+//@extend %ff600;
+
+
+%sf600 {
+  font-family: SFUIDisplay, sans-serif;
+  font-weight: 600;
+}
+
+%sf500 {
+  font-family: SFUIDisplay, sans-serif;
+  font-weight: 500;
+}
+
+%sf400 {
+  font-family: SFUIDisplay, sans-serif;
+  font-weight: 400;
+}
+
+%ff600 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+}
+
+
+//LOGIN
+
+%loginBlock {
+  margin: 8vh 0;
+  padding: 25px 35px;
+
+  max-width: 415px;
+  width: 100%;
+  min-height: 470px;
+
+  background-color: $bgWhite;
+  border-radius: 8px;
+  text-align: center;
+}
+
+%loginCaption {
+  margin-bottom: 40px;
+
+  @extend %ff600;
+  font-size: 22px;
+}
+
+%subTitle {
+  margin-bottom: 20px;
+  @extend %sf600;
+  font-size: 16px;
+  line-height: 1.1;
+  text-align: left;
+}
+
+
+//BTNS
+
+%btn {
+  min-height: 35px;
+  width: 100%;
+  max-width: 185px;
+
+  padding: 10px;
+
+  @extend %sf500;
+  font-size: 16px;
+  line-height: 1.2;
+  letter-spacing: 0.01em;
+  color: $textLight;
+
+  background-color: $accent;
+  box-shadow: 0 4px 18px rgba(33, 38, 143, .35),
+  inset 0 1px 0 rgba(255, 255, 255, .3);
+  border-radius: $brBtn;
+  border: none;
+  cursor: pointer;
+
+  transition: .2s;
+
+  &:hover {
+    background-color: lighten($accent, 5%);
+  }
+
+  &:active {
+    background-color: darken($accent, 5%);
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
+
+%btnCancel {
+  max-width: 125px;
+  width: 100%;
+
+  background-color: $bgGrayBlue;
+  color: rgba(33, 38, 143, .8);
+  box-shadow: none;
+
+  &:hover {
+    background-color: lighten($bgGrayBlue, 5%);
+  }
+
+  &:active {
+    background-color: darken($bgGrayBlue, 5%);
+  }
+}
+
+%btnDelete {
+  color: $bgWhite;
+  text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25);
+
+  background-color: $bgDelete;
+  box-shadow: 0px 4px 18px rgba(241, 69, 61, 0.35),
+  inset 0px 1px 0px rgba(255, 255, 255, 0.3);
+
+
+  &:hover {
+    background-color: lighten($bgDelete, 5%);
+  }
+
+  &:active {
+    background-color: darken($bgDelete, 5%);
+  }
+}
+
+
+//LINKS
+
+%linkTry {
+  font-size: 16px;
+  @extend %sf600;
+  color: $accent;
+
+  &:hover {
+    text-decoration: underline;
+    color: lighten($accent, 10%);
+  }
+
+  &:active {
+    color: darken($accent, 10%);
+  }
+}
+
+// Breakpoints
+//   @include media(sm) {    }
+// @media (max-width: 630px) {  }
+
+$breakpoints: (
+        xs: 574.8px,
+        sm: 766.8px,
+        md: 990.8px,
+        lg: 1080.8px,
+        xl: 1199.8px,
+);
+
+
+//modal
+
+%modal {
+  padding: 15px 0 30px;
+
+  max-width: 395px;
+  min-height: 225px;
+  width: 100%;
+
+  position: relative;
+  z-index: 99;
+
+  background-color: $bgWhite;
+
+  @media (max-height: 380px) {
+    min-height: 190px;
+    padding-bottom: 10px;
+  }
+}
+
+%cross {
+  width: 14px;
+  height: 14px;
+
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+%accentText {
+  @extend %sf600;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+
+//learn
+
+%learnBlock {
+  @extend %loginBlock;
+  padding: 35px 30px 25px;
+
+  min-height: 295px;
+  width: 100%;
+}
+
+
+
+

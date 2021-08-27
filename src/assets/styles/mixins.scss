@@ -1,0 +1,75 @@
+@import "variebles";
+
+@mixin container() {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 80%;
+  min-height: 100%;
+  margin: 0 auto;
+}
+
+@mixin flexBox($flexDirection, $justifyContent, $alineItems, $flexWrap) {
+  display: flex;
+  flex-direction: $flexDirection;
+  justify-content: $justifyContent;
+  align-items: $alineItems;
+  flex-wrap: $flexWrap;
+}
+
+@mixin text($fontFamily, $fontSize, $fontWeight, $whiteTextColor) {
+  font-family: $fontFamily;
+  font-size: $fontSize;
+  font-weight: $fontWeight;
+  color: $whiteTextColor;
+}
+
+@mixin inputAndTextArea($width, $height, $fonstSize, $textColor, $border) {
+  width: $width;
+  height: $height;
+  border: $border;
+  border-radius: 8px;
+  outline: none;
+  padding: 4px;
+  transition: .3s;
+  @include text($fontFamilyStyle, $fonstSize, 500, $textColor);
+}
+
+@mixin button($width, $height, $fonstSize, $backgroundColor, $border) {
+  width: $width;
+  height: $height;
+  background-color: $backgroundColor;
+  overflow: hidden;
+  border: $border;
+  border-radius: 6px;
+  transition: .3s;
+  @include text($fontFamilyStyle, $fonstSize, 400, $textColor);
+}
+
+
+//nata
+
+@mixin flex($flex-direction: row, $align-items: center, $justifyContent: space-between) {
+  display: flex;
+  flex-direction: $flex-direction;
+  align-items: $align-items;
+  justify-content: $justifyContent;
+}
+
+//   @include flex(column);
+//   @include flex();
+//   @include flex(center, flex-start);
+//   @include flex(center, center);
+
+@mixin media($width, $type:max) {
+  @if map_has_key($breakpoints, $width) {
+    $width: map_get($breakpoints, $width);
+    @if $type == min {
+      $width: $width + 1px;
+    }
+  }
+  @media (#{$type}-width: $width) {
+    @content;
+  }
+}

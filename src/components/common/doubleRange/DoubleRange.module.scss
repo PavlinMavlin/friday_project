@@ -1,0 +1,19 @@
+@import "./src/assets/styles/variebles.scss";
+@import "./src/assets/styles/mixins.scss";
+
+.numberCards {
+  width: 196px;
+}
+
+.title {
+  margin-bottom: 40px;
+
+  @extend %subTitle;
+}
+
+.none {
+  position: absolute;
+}
+
+
+

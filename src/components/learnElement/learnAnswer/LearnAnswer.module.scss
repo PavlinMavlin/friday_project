@@ -1,0 +1,101 @@
+@import "../../../assets/styles/variebles";
+@import "../../../assets/styles/mixins";
+
+.learnAnswer {
+  @extend %learnBlock;
+}
+
+.caption {
+  @extend %loginCaption;
+  margin-bottom: 25px;
+}
+
+.block {
+  margin-bottom: 20px;
+
+  text-align: left;
+
+  @include media(xs) {
+    text-align: center;
+  }
+}
+
+.action {
+  @extend %sf600;
+  font-size: 16px;
+}
+
+.text {
+  @extend %sf400;
+  font-size: 16px;
+}
+
+.radioWrap {
+  @include flex(column, flex-start);
+
+  margin: 40px 0 65px;
+
+  text-align: left;
+}
+
+.radio {
+  & span {
+    color: $textColor;
+    font-family: SFUIDisplay, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+
+    &:first-child:hover {
+      background-color: #ECECF9 !important;
+    }
+  }
+}
+
+.radioLabel {
+  display: flex;
+  align-items: center;
+  color: $textColor;
+  font-family: SFUIDisplay, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 5px 0;
+  padding: 0 3px;
+}
+
+.radioInput {
+  margin-right: 10px;
+}
+
+.btns {
+  @include flex();
+  padding-bottom: 25px;
+
+  @include media(xs) {
+    flex-direction: column-reverse;
+
+    padding-bottom: 0;
+  }
+}
+
+.button {
+  max-width: 125px;
+  margin: 0 5px 0 5px;
+
+  @include media(xs) {
+    max-width: 125px;
+    margin-bottom: 30px;
+  }
+}
+
+.button:first-child {
+  @extend %btnCancel;
+}
+
+.button:last-child {
+  max-width: 185px;
+}
+
+
+

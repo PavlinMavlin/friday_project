@@ -1,0 +1,28 @@
+@import "../src/assets/styles/variebles";
+@import "../src/assets/styles/mixins";
+@import "../src/assets/styles/fonts";
+
+.pagesContainer {
+  @include flex(column, center, flex-start);
+
+  padding: 20px;
+
+  min-height:  100vh;
+
+  font-family: SFUIDisplay, sans-serif;
+  font-weight: 400;
+  font-size: 10px;
+  color: $textColor;
+  line-height: 1.5;
+  text-decoration: none;
+
+  background: linear-gradient(180deg, #E6D4DE 0%, #9890C7 100%);
+  box-sizing: border-box;
+
+  @include media(xs) {
+    padding: 15px 10px;
+  }
+}
+
+
+

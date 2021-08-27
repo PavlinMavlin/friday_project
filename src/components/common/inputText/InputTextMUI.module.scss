@@ -1,0 +1,30 @@
+@import "./src/assets/styles/variebles.scss";
+@import "./src/assets/styles/mixins.scss";
+
+.inputText {
+  @include inputAndTextArea(0, 0, 16px, $blackTextColor, 3px solid $primaryColor);
+
+  &:hover {
+    border-color: $secondColor;
+  }
+
+  &:focus {
+    border-color: $secondColor;
+  }
+}
+
+.errorInput {
+  @include inputAndTextArea(0, 0, 16px, $whiteTextColor, 3px solid $redErrorColor);
+
+  &:hover {
+    border-color: $brightRedErrorColor;
+  }
+
+  &:focus {
+    border-color: $brightRedErrorColor;
+  }
+}
+
+.error {
+  @include text($fontFamilyStyle, 16, 500, $redErrorColor);
+}

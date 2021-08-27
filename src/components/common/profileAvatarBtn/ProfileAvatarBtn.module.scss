@@ -1,0 +1,45 @@
+@import "./src/assets/styles/variebles.scss";
+@import "./src/assets/styles/mixins.scss";
+
+.profileAvatar {
+  margin: 0 auto;
+
+  max-width: 235px;
+  width: 100%;
+
+  background-color: transparent;
+  text-align: center;
+}
+
+.avatarWrap {
+  width: 96px;
+  height: 96px;
+
+  margin: 0 auto;
+
+  position: relative;
+}
+
+.avatar {
+  width: 100%;
+
+  border-radius: 50%;
+}
+
+.photoIcon {
+  width: 32px;
+  height: 32px;
+
+  position: absolute;
+  top: 64px;
+  right: -3px;
+
+  border-radius: 50%;
+  border: none;
+  background-image: url(./../../../assets/images/photoIcon.svg);
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}

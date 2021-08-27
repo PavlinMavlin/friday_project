@@ -1,0 +1,35 @@
+@import "./src/assets/styles/variebles.scss";
+@import "./src/assets/styles/mixins.scss";
+
+.checkEmailBlock {
+  @include flexBox(row, center, center, nowrap);
+  height: 80vh;
+}
+
+.checkEmail {
+  @extend %loginBlock;
+}
+
+.iconBg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin: 25px auto;
+
+  height: 108px;
+  width: 108px;
+
+  background-color: $bgGrayBlue;
+  border-radius: 50%;
+}
+
+.caption {
+  @extend %loginCaption;
+
+  margin-bottom: 20px;
+}
+
+.text {
+  font-size: 16px;
+}

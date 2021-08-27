@@ -1,0 +1,108 @@
+@import "./src/assets/styles/variebles.scss";
+@import "./src/assets/styles/mixins.scss";
+
+.packsList {
+  width: 100%;
+}
+
+.container {
+  @extend %container;
+}
+
+.inner {
+  min-height: 635px;
+
+  @include flex(row, stretch, flex-start);
+  border-radius: $br;
+
+  @include media(lg) {
+    flex-direction: column;
+  }
+}
+
+.aside {
+  @include flex(column, center, flex-start);
+  padding: 35px 25px;
+
+  width: 243px;
+
+  background-color: $textLight;
+  border-radius: 8px 0 0 8px;
+
+  @include media(lg) {
+    flex-direction: row;
+    justify-content: flex-start;
+
+    padding: 20px 20px 0;
+
+    width: 100%;
+
+    border-radius: 8px 8px 0 0;
+  }
+
+  @include media(xs) {
+    flex-direction: column;
+    align-items: center;
+
+    padding: 20px;
+
+    border-radius: 8px 8px 0 0;
+  }
+}
+
+.rangeWrap {
+  margin-top: 45px;
+
+  @include media(lg) {
+    margin: 30px 0 0 20px;
+  }
+
+  @include media(xs) {
+    margin: 30px 0 0 0;
+  }
+}
+
+.content {
+  padding: 25px 40px 25px 40px;
+
+  width: 100%;
+  max-width: 900px;
+
+  background-color: #ffffff;
+  border-radius: 0 8px 8px 0;
+
+  @include media(lg) {
+    padding: 25px;
+
+    max-width: 100%;
+
+    border-radius: 0 0 8px 8px;
+  }
+}
+
+.topWrap {
+  @include flex();
+
+  @include media(xs) {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+
+.tableTitle {
+  @extend %ff600;
+  font-size: 22px;
+  color: $textColor;
+}
+
+.button {
+  margin: 25px 0 25px 25px;
+  padding: 0;
+
+  @include media(xs) {
+    max-width: 100%;
+    margin: 10px 0 20px;
+  }
+}
+
+

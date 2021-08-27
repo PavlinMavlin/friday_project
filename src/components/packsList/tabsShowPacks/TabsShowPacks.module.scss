@@ -1,0 +1,36 @@
+@import "../../../assets/styles/variebles";
+@import "../../../assets/styles/mixins";
+
+.tabsShowPacks {
+  width: 196px;
+}
+
+.title {
+  @extend %subTitle;
+}
+
+.tabItemsContainer {
+  display: flex;
+  flex-direction: row;
+}
+
+.tabItem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100px;
+  height: 30px;
+
+  font-size: 16px;
+  border: none;
+  background-color: #ffffff;
+
+  cursor: pointer;
+}
+
+.activeTabItem {
+  background-color: #9A91C8;
+}
+
+
