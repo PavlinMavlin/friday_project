@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/friday_project/static/css/main.86310b1b.chunk.css",
+    "main.js": "/friday_project/static/js/main.0027d284.chunk.js",
+    "main.js.map": "/friday_project/static/js/main.0027d284.chunk.js.map",
+    "runtime-main.js": "/friday_project/static/js/runtime-main.d9251755.js",
+    "runtime-main.js.map": "/friday_project/static/js/runtime-main.d9251755.js.map",
+    "static/js/2.352353eb.chunk.js": "/friday_project/static/js/2.352353eb.chunk.js",
+    "static/js/2.352353eb.chunk.js.map": "/friday_project/static/js/2.352353eb.chunk.js.map",
+    "static/js/3.cfd4ffc6.chunk.js": "/friday_project/static/js/3.cfd4ffc6.chunk.js",
+    "static/js/3.cfd4ffc6.chunk.js.map": "/friday_project/static/js/3.cfd4ffc6.chunk.js.map",
+    "index.html": "/friday_project/index.html",
+    "static/css/main.86310b1b.chunk.css.map": "/friday_project/static/css/main.86310b1b.chunk.css.map",
+    "static/js/2.352353eb.chunk.js.LICENSE.txt": "/friday_project/static/js/2.352353eb.chunk.js.LICENSE.txt",
+    "static/media/App.module.scss": "/friday_project/static/media/SFUIDisplay-Regular.d5b1bd49.woff2",
+    "static/media/CardsList.module.scss": "/friday_project/static/media/arrow.a0d94486.svg",
+    "static/media/ModalAdd.module.scss": "/friday_project/static/media/cross.45fc2a18.svg",
+    "static/media/defaultUserAvatar.0deba007.png": "/friday_project/static/media/defaultUserAvatar.0deba007.png",
+    "static/media/email.e39fba67.svg": "/friday_project/static/media/email.e39fba67.svg",
+    "static/media/HeaderMenu.module.scss": "/friday_project/static/media/profileIcon.6d0d1535.svg",
+    "static/media/ProfileAvatarBtn.module.scss": "/friday_project/static/media/photoIcon.d4a131d0.svg",
+    "static/media/search.2cd0b728.svg": "/friday_project/static/media/search.2cd0b728.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.d9251755.js",
+    "static/js/2.352353eb.chunk.js",
+    "static/css/main.86310b1b.chunk.css",
+    "static/js/main.0027d284.chunk.js"
+  ]
+}
